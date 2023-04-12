@@ -3,4 +3,15 @@
     <div class="card-body">
         Total @angular packages: {{totalAngularPackages}}
     </div>
+
+    <h2>My List</h2>
+    <div>Selected: {{selectedPackage.package.name}}</div>
+    <ul class="heroes">
+      <li *ngFor="let package of packages">
+        <button [class.selected]="package === selectedPackage" type="button" (click)="onSelect(package)">
+          <!-- <span class="badge">{{package.id}}</span> -->
+          <span class="name">{{package.name}}</span>
+        </button>
+      </li>
+    </ul>    
 </div>
