@@ -17,7 +17,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl --ssl-key .\\.environment\\localhost.key --ssl-cert .\\.environment\\localhost.crt",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
